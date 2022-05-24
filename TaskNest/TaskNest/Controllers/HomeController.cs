@@ -19,11 +19,14 @@ namespace TaskNest.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            IQueryable<Product> query = _context.Products.Include(p => p.ProductImages).Include(p => p.Category).AsQueryable();
             HomeVM homeVM = new HomeVM()
             {
                 Carusels = await _context.Carusels.ToListAsync(),
                 Categories = await _context.Categories.ToListAsync(),
-                Products = await _context.Products.Include(p=>p.ProductImages).Include(p=>p.Category).Take(10).ToListAsync()
+                Products = await query.Take(10).ToListAsync(),
+                RecentProducts = await query.OrderByDescending(p => p.Id).Take(3).ToListAsync(),
+                TopRatedProducts = await query.OrderByDescending(p => p.Raiting).Take(3).ToListAsync()
             };
             return View(homeVM);
         }

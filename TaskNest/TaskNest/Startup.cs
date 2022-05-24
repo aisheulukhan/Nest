@@ -27,7 +27,7 @@ namespace TaskNest
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:Default"]);
+                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
             });
         }
 
