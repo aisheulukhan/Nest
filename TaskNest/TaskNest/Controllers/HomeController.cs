@@ -23,7 +23,7 @@ namespace TaskNest.Controllers
             HomeVM homeVM = new HomeVM()
             {
                 Carusels = await _context.Carusels.ToListAsync(),
-                Categories = await _context.Categories.ToListAsync(),
+                Categories = await _context.Categories.Where(c=>c.IsDeleted==false).ToListAsync(),
                 Products = await query.Take(10).ToListAsync(),
                 RecentProducts = await query.OrderByDescending(p => p.Id).Take(3).ToListAsync(),
                 TopRatedProducts = await query.OrderByDescending(p => p.Raiting).Take(3).ToListAsync()

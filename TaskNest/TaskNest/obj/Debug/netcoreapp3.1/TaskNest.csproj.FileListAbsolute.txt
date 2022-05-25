@@ -292,3 +292,8 @@ C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\TaskNest.cspr
 C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\TaskNest.dll
 C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\TaskNest.pdb
 C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\TaskNest.genruntimeconfig.cache
+C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\_ViewStart.cshtml.g.cs
+C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\_ViewImports.cshtml.g.cs
+C:\Users\HP\Desktop\Nest\TaskNest\TaskNest\obj\Debug\netcoreapp3.1\Razor\Areas\Manage\Views\Category\Index.cshtml.g.cs

@@ -52,6 +52,9 @@ namespace TaskNest
             {
                 endpoints.MapControllerRoute(
                     name: "default",
+                    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
